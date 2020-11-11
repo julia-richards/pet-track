@@ -8,9 +8,9 @@ const OwnersList = (props) => (
 			{props.owners.map((owner) => (
 				<li key={owner.id}>
 					<OwnerLink
-						name={props.href}
-						firstName={props.firstName}
-						lastName={props.lastName}
+						href={owner.href}
+						firstName={owner.firstName}
+						lastName={owner.lastName}
 					/>
 				</li>
 			))}
